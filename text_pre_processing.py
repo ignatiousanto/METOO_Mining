@@ -64,7 +64,7 @@ for tweet in body:
 
 print(cleaned_body)
 pickle.dump( [cleaned_body,l_o_links,l_o_refs,l_o_hashtags], open( "save.p", "wb" ) )
-
+pickle.dump( body, open( "body.p", "wb" ) )
 
 
 # print(df_all)
